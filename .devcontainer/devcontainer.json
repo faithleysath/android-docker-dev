@@ -1,0 +1,28 @@
+{
+  "name": "Android Development",
+  "dockerComposeFile": ["../docker/docker-compose.yml"],
+  "service": "android-dev",
+  "workspaceFolder": "/home/developer/projects",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        }
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "fwcd.kotlin",
+        "redhat.java",
+        "vscjava.vscode-gradle",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "forwardPorts": [5037],
+  "remoteUser": "developer"
+}
